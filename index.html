@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en" ng-app="site">
+<head>
+    <meta charset="utf-8">
+    <title>MentorIntern</title>
+    <link rel="stylesheet" href="css/app.css">
+    <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.6/angular.min.js"></script>
+    <script src="//cdn.firebase.com/v0/firebase.js"></script>
+    <script src="//cdn.firebase.com/libs/angularfire/0.6.0/angularfire.min.js"></script>
+    <script src="js/app.js"></script>
+</head>
+<body ng-controller="main">
+
+    <h1>MentorIntern - Beta</h1>
+
+    <p>
+        Some Above the Fold stuff...
+    </p>
+
+    <h2>How may we help you?</h2>
+
+    <div>
+        <span ng-click="audienceTab='intern'" ng-style="calcTabStyle('intern')">Find me a Job</span> 
+        <span ng-click="audienceTab='mentor'" ng-style="calcTabStyle('mentor')">Find me an Intern</span>
+    </div>
+
+    <div ng-hide="audienceTab!='intern'">
+        So, you'd like to be an intern, ehhh
+    </div>
+
+    <div ng-hide="audienceTab!='mentor'">
+        You think you know your stuff?  Well, we'll see about that!
+    </div>
+
+</body>
+</html>
