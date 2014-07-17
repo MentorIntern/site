@@ -19,17 +19,21 @@
 
     <h2>How may we help you?</h2>
 
-    <ul id="audienceTabs">
-        <li ng-click="audienceTab='intern'" ng-style="calcTabStyle('intern')">Find a Job</li> 
-        <li ng-click="audienceTab='mentor'" ng-style="calcTabStyle('mentor')">Find an Intern</li>
-    </ul>
+    <div id="audienceSpecificContent" ng-cloak class="ng-cloak">
 
-    <div ng-hide="audienceTab!='intern'">
-        So, you'd like to be an intern, ehhh
-    </div>
+        <ul id="audienceTabs">
+            <li ng-click="audienceTab='intern'" ng-style="calcTabStyle('intern')">Find a Job</li> 
+            <li ng-click="audienceTab='mentor'" ng-style="calcTabStyle('mentor')">Find an Intern</li>
+        </ul>
 
-    <div ng-hide="audienceTab!='mentor'">
-        You think you know your stuff?  Well, we'll see about that
+        <div ng-hide="audienceTab!='intern'">
+            So, you'd like to be an intern, ehhh
+        </div>
+
+        <div ng-hide="audienceTab!='mentor'">
+            You think you know your stuff?  Well, we'll see about that
+        </div>
+
     </div>
 
 </body>
