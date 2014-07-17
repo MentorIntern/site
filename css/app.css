@@ -1,1 +1,4 @@
-h1 { font-size: 2em; color: purple; }
+h1 { font-size: 2em; color: cyan; }
+h2 { font-size: 1.5em; color: magenta; }
+#audienceTabs { padding: 0px; }
+#audienceTabs li { display: inline; list-style-type: none; margin-right: 20px; padding: 0px 15px; border: solid black 1px; }

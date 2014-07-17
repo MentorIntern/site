@@ -11,7 +11,7 @@
 </head>
 <body ng-controller="main">
 
-    <h1>MentorIntern - Beta</h1>
+    <h1>MentorIntern</h1>
 
     <p>
         Some Above the Fold stuff...
@@ -19,17 +19,17 @@
 
     <h2>How may we help you?</h2>
 
-    <div>
-        <span ng-click="audienceTab='intern'" ng-style="calcTabStyle('intern')">Find me a Job</span> 
-        <span ng-click="audienceTab='mentor'" ng-style="calcTabStyle('mentor')">Find me an Intern</span>
-    </div>
+    <ul id="audienceTabs">
+        <li ng-click="audienceTab='intern'" ng-style="calcTabStyle('intern')">Find me a Job</li> 
+        <li ng-click="audienceTab='mentor'" ng-style="calcTabStyle('mentor')">Find me an Intern</li>
+    </ul>
 
     <div ng-hide="audienceTab!='intern'">
         So, you'd like to be an intern, ehhh
     </div>
 
     <div ng-hide="audienceTab!='mentor'">
-        You think you know your stuff?  Well, we'll see about that!
+        You think you know your stuff?  Well, we'll see about that
     </div>
 
 </body>
